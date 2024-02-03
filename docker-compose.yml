@@ -16,6 +16,8 @@ services:
     restart: always
     ports:
       - 8000:8000
+    environment:
+      - MONGO_URI=mongodb://root:rootpassword@localhost
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
       interval: 30s
