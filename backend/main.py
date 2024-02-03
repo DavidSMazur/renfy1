@@ -1,12 +1,8 @@
 from fastapi import FastAPI
 
-from dotenv import load_dotenv
-
 import os
 
 app = FastAPI()
-
-load_dotenv()
 
 from pymongo import MongoClient
 
